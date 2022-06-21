@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peaction
+  name: action
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: peaction
+      app: action
   template:
     metadata:
       labels:
-        app: peaction
+        app: action
     spec:
       containers:
-      - image: okteto.dev/peaction:latest
-        name: peaction
+      - image: okteto.dev/action:latest
+        name: action
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "kissanime.ru.net"
+          value: "www.moviecrumbs.net"
         - name: Vless_UUID
-          value: "c53a1931-8b30-40c8-945d-e94c23808616"
+          value: "f67fcce4-40a7-4af7-aa07-366618a7fc84"
         - name: Vless_Path
-          value: "/DFGil7df"
+          value: "/TYsedu5"
         - name: Vmess_UUID
-          value: "c53a1931-8b30-40c8-945d-e94c23808616"
+          value: "f67fcce4-40a7-4af7-aa07-366618a7fc84"
         - name: Vmess_Path
-          value: "/giouwt"
+          value: "/YISFCR76"
         - name: Share_Path
-          value: "/Share324"
+          value: "/Share512"
