@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sapiont
+  name: peaction
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "sapiont"
+  - name: "peaction"
     port: 8080
   selector:
-    app: sapiont
+    app: peaction
