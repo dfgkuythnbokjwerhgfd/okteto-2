@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yeroil
+  name: giolre
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yeroil
+      app: giolre
   template:
     metadata:
       labels:
-        app: yeroil
+        app: giolre
     spec:
       containers:
-      - image: okteto.dev/yeroil:latest
-        name: yeroil
+      - image: okteto.dev/giolre:latest
+        name: giolre
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "animeflick.net"
+          value: "vumoo.to"
         - name: Vless_UUID
-          value: "ab76eb97-fb02-4cef-adc4-4bc10f30b4a5"
+          value: "7b9a7cfc-c286-4961-b731-6a187535196b"
         - name: Vless_Path
-          value: "/REcvt54"
+          value: "/airedc0"
         - name: Vmess_UUID
-          value: "ab76eb97-fb02-4cef-adc4-4bc10f30b4a5"
+          value: "7b9a7cfc-c286-4961-b731-6a187535196b"
         - name: Vmess_Path
-          value: "/ADCF676R"
+          value: "/ilecraz"
         - name: Share_Path
-          value: "/Share323"
+          value: "/Share731"
