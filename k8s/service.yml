@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: giolre
+  name: sapiont
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "giolre"
+  - name: "sapiont"
     port: 8080
   selector:
-    app: giolre
+    app: sapiont
