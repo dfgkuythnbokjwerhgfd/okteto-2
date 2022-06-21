@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sapiont
+  name: peaction
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sapiont
+      app: peaction
   template:
     metadata:
       labels:
-        app: sapiont
+        app: peaction
     spec:
       containers:
-      - image: okteto.dev/sapiont:latest
-        name: sapiont
+      - image: okteto.dev/peaction:latest
+        name: peaction
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "animefrenzy.net"
+          value: "kissanime.ru.net"
         - name: Vless_UUID
-          value: "2d4400a5-e594-4c2f-b64e-700b0096c3cc"
+          value: "c53a1931-8b30-40c8-945d-e94c23808616"
         - name: Vless_Path
-          value: "/aOYFert56"
+          value: "/DFGil7df"
         - name: Vmess_UUID
-          value: "2d4400a5-e594-4c2f-b64e-700b0096c3cc"
+          value: "c53a1931-8b30-40c8-945d-e94c23808616"
         - name: Vmess_Path
-          value: "/herc06y"
+          value: "/giouwt"
         - name: Share_Path
-          value: "/Share134"
+          value: "/Share324"
